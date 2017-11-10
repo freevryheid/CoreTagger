@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:id="@+id/modeSwitch"
+        android:defaultValue="false"
+        android:key="mode_switch"
+        android:summary="@string/mode_summary"
+        android:title="@string/mode_title" />
+
+    <ListPreference
+        android:key="device_list"
+        android:title="RFID Device"
+        android:summary="RFID reader"
+        android:entries="@array/devices"
+        android:entryValues="@array/device"
+        android:defaultValue="2" />
+
+    <EditTextPreference
+        android:defaultValue="Tagger"
+        android:key="tagger_edit"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/tagger"
+        android:summary="@string/tagger_summary" />
+
+    <EditTextPreference
+        android:defaultValue="000000000"
+        android:key="office_edit"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/office"
+        android:summary="@string/office_summary" />
+
+    <EditTextPreference
+        android:defaultValue="000000000"
+        android:key="csj_edit"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/projectcsj"
+        android:summary="@string/csj_summary" />
+
+</PreferenceScreen>
